@@ -29,5 +29,7 @@ public class Inquiry {
 	/**
 	 * お問合せ（必須, 文字列, 文字数制限500文字）
 	 */
+	@NotBlank
+	@Size(max=500)
 	private String inquiry;
 }
